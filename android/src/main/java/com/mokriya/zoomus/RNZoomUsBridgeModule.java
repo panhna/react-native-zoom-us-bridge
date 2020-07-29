@@ -125,7 +125,7 @@ public class RNZoomUsBridgeModule extends ReactContextBaseJavaModule implements 
         params.userId = userId;
         params.userType = MeetingService.USER_TYPE_API_USER;
         params.zoomAccessToken = zoomAccessToken;
-        params.zoomToken = zoomToken;
+        // params.zoomToken = zoomToken;
 
         int startMeetingResult = meetingService.startMeetingWithParams(reactContext.getCurrentActivity(), params, opts);
         Log.i(TAG, "startMeeting, startMeetingResult=" + startMeetingResult);
